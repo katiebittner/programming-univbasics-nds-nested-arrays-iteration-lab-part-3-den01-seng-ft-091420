@@ -6,7 +6,7 @@ def join_nested_strings(src)
   
   index = 0 
   while index < src.count do 
-    
+    inner_index = 
     index += 1
   end
   
