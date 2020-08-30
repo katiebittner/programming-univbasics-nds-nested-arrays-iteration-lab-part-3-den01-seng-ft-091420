@@ -8,7 +8,7 @@ def join_nested_strings(src)
   while index < src.count do 
     inner_index = 0 
     while inner_index < src[index].length
-      if src[index][inner_inder] 
+      if src[index][inner_index].instance_of?(String) 
     inner_index += 1
     end
     index += 1
