@@ -4,7 +4,7 @@ def join_nested_strings(src)
   while index < src.count do
     element_index = 0
     while element_index < src[index].count do 
-      if src[row_index][element_index].even? 
+      if src[index][element_index].instance_of? 
         p src[row_index][element_index]
       end
       element_index += 1
