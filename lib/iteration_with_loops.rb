@@ -1,24 +1,15 @@
 def join_nested_strings(src)
   
-  joined_string = ""
-  
   index = 0 
-  
-  while index < src.count do 
-    
-    inner_index = 0 
-    
-    while inner_index < src[index].count do
-      if src[index][inner_index].instance_of?(String)
-        joined_string += src[index][inner_index] + " "
-        inner_index += 1
+  while index < src.count do
+    element_index = 0
+    while element_index < src[index].count do 
+      if src[row_index][element_index].even? 
+        p src[row_index][element_index]
       end
+      element_index += 1
     end
-    
-    index += 1
-    
+    row_index += 1
   end
-  
-  joined_string
   
 end
