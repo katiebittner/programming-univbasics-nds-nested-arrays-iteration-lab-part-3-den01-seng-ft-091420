@@ -6,7 +6,7 @@ def join_nested_strings(src)
     element_index = 0
     while element_index < src[index].count do 
       if src[index][element_index].instance_of?(String) 
-        joined_string += rc[index][element_index] += " "
+        joined_string += src[index][element_index] += " "
       end
       element_index += 1
     end
